@@ -10,6 +10,21 @@ A Python and Streamlit portfolio proof of concept demonstrating an end-to-end wo
 
 The platform brings together practical governance activities that are often managed across separate spreadsheets and tools. It provides a single prototype workspace for recording AI systems, assessing risks, mapping governance controls to selected frameworks, evaluating AI-enabled use cases, tracking findings, and viewing an executive summary.
 
+## Portfolio highlights
+
+This project demonstrates how AI governance activities can be connected in a practical, reviewable workflow using Python, Streamlit, and SQLite.
+
+**Résumé-ready summary**
+
+> Built a modular AI governance and assurance platform prototype that brings together AI inventory, six-dimension risk assessment, human review, governance controls, evaluation evidence, findings and remediation, and executive reporting. Implemented SQLite persistence and a local keyword-based policy retrieval demo, with clear boundaries around prototype scoring, security testing, and human decision-making.
+
+The implementation highlights:
+
+- Modular Streamlit pages and SQLite-backed records for governance workflows.
+- Structured risk scoring, control assessments, evaluation runs, evidence references, and remediation tracking.
+- Indicative NIST AI RMF and ISO/IEC 42001 control references, with explicit disclaimers against treating them as certification.
+- A fictional HR policy retrieval demo and security-oriented test scenarios designed for portfolio walkthroughs.
+
 ## Capabilities
 
 - **AI inventory:** Register AI systems and maintain core ownership, purpose, data, user, provider, and deployment information.
@@ -28,7 +43,7 @@ The platform brings together practical governance activities that are often mana
 - Python
 - Streamlit
 - SQLite
-- Retrieval-augmented generation (RAG) prototype
+- Keyword-based document retrieval demo
 - SQL-based persistence
 
 ## Architecture at a glance
@@ -87,7 +102,7 @@ The exact dependency versions should be taken from the repository's `requirement
 
 The local database is initialised by the application modules. Use synthetic demonstration records when evaluating or presenting the prototype.
 
-The local HR RAG demonstration looks for `.txt` policy files under `data/hr_documents/`. Those documents are intentionally not included in this public repository. To exercise retrieval locally, create that folder and add fictional, non-sensitive sample policies. Without local policy files, the chatbot returns its documented no-supporting-information response.
+The local HR policy retrieval demo looks for `.txt` policy files under `data/hr_documents/`. Those documents are intentionally not included in this public repository. To exercise retrieval locally, create that folder and add fictional, non-sensitive sample policies. Without local policy files, the chatbot returns its documented no-supporting-information response.
 
 ## Framework and assessment disclaimer
 
@@ -98,8 +113,8 @@ NIST AI RMF and ISO/IEC 42001 references in this project are indicative learning
 This is a **portfolio proof of concept**, not a production governance platform. In particular:
 
 - Production identity management, authentication, role-based access control, and document-level authorisation are not implemented.
-- The HR RAG demonstration uses simple local document chunking and keyword-based retrieval; it is not a production semantic retrieval system.
-- The chatbot demonstration does not use a production LLM. Its security scenarios therefore do not establish resistance to real LLM prompt injection or system-prompt extraction.
+- The HR policy demo uses local document chunking and keyword-based retrieval with mock responses; it is not a production semantic retrieval system and does not call an LLM.
+- Security scenarios are prototype evaluation cases, not proof of resistance to real-world attacks or LLM prompt injection.
 - Evidence references are recorded as metadata; this does not by itself verify the authenticity or sufficiency of evidence.
 - Dashboard indicators summarise records in the local database and depend on the quality and completeness of those records.
 - Human review remains necessary. The application does not make autonomous compliance, deployment, or risk-acceptance decisions.

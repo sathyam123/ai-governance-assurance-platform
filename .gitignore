@@ -34,6 +34,7 @@ hr_documents/
 uploads/
 private/
 secrets/
+ai-governance-source-review.zip
 
 # Streamlit
 .streamlit/secrets.toml
