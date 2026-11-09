@@ -85,7 +85,9 @@ The exact dependency versions should be taken from the repository's `requirement
    python -m streamlit run app.py
    ```
 
-The local database is initialised by the application modules. Use synthetic demonstration records when evaluating or presenting the prototype.\n\nThe local HR RAG demonstration looks for `.txt` policy files under `data/hr_documents/`. Those documents are intentionally not included in this public repository. To exercise retrieval locally, create that folder and add fictional, non-sensitive sample policies. Without local policy files, the chatbot returns its documented no-supporting-information response.
+The local database is initialised by the application modules. Use synthetic demonstration records when evaluating or presenting the prototype.
+
+The local HR RAG demonstration looks for `.txt` policy files under `data/hr_documents/`. Those documents are intentionally not included in this public repository. To exercise retrieval locally, create that folder and add fictional, non-sensitive sample policies. Without local policy files, the chatbot returns its documented no-supporting-information response.
 
 ## Framework and assessment disclaimer
 
