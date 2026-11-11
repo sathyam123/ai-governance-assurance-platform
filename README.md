@@ -14,10 +14,6 @@ The platform brings together practical governance activities that are often mana
 
 This project demonstrates how AI governance activities can be connected in a practical, reviewable workflow using Python, Streamlit, and SQLite.
 
-**Résumé-ready summary**
-
-> Built a modular AI governance and assurance platform prototype that brings together AI inventory, six-dimension risk assessment, human review, governance controls, evaluation evidence, findings and remediation, and executive reporting. Implemented SQLite persistence and a local keyword-based policy retrieval demo, with clear boundaries around prototype scoring, security testing, and human decision-making.
-
 The implementation highlights:
 
 - Modular Streamlit pages and SQLite-backed records for governance workflows.
